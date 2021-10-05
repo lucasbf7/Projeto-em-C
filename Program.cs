@@ -39,7 +39,7 @@ namespace Revisao
             Console.WriteLine("X- Sair");
             Console.WriteLine();
 
-            opcaoUsuario = Console.ReadLine();
+            string opcaoUsuario = Console.ReadLine();
             return opcaoUsuario;
         }
     }
