@@ -58,7 +58,30 @@ namespace Revisao
                         }
 
                         var mediaGeral = notaTotal / nrAlunos;
-                        Console.WriteLine($"Média Geral: {mediaGeral}");
+                        Conceito conceitoGeral;
+
+                        if (mediaGeral < 2)
+                        {
+                            conceitoGeral = Conceito.E;
+                        }
+                        else if (mediaGeral < 4)
+                        {
+                            conceitoGeral = Conceito.D;
+                        }
+                        else if (mediaGeral < 6)
+                        {
+                            conceitoGeral = Conceito.C;
+                        }
+                        else if (mediaGeral < 8)
+                        {
+                            conceitoGeral = Conceito.B;
+                        }
+                        else
+                        {
+                            conceitoGeral = Conceito.A;
+                        }
+
+                        Console.WriteLine($"Média Geral: {mediaGeral} - Conceito: {conceitoGeral}");
 
                         break;
                     default:
@@ -77,7 +100,7 @@ namespace Revisao
             Console.WriteLine("Informe a opção desejada: ");
             Console.WriteLine("1- Inserir novo aluno");
             Console.WriteLine("2- Listar alunos");
-            Console.WriteLine("3- Calcular média geral");
+            Console.WriteLine("3- Calcular média e conceito gerais");
             Console.WriteLine("X- Sair");
             Console.WriteLine();
 
