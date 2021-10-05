@@ -8,7 +8,7 @@ namespace Revisao
         {
             string opcaoUsuario = ObterOpcaoUsuario();
 
-            while (opcaoUsuario.ToUpper() != "X")
+            while (opcaoUsuario.ToUpper() != "X");
             {
                  switch (opcaoUsuario)
                  {  
@@ -36,7 +36,7 @@ namespace Revisao
             Console.WriteLine("1- Inserir novo aluno");
             Console.WriteLine("2- Listar alunos");
             Console.WriteLine("3- Calcular média geral");
-            Console.WriteLine("X- Sair")
+            Console.WriteLine("X- Sair");
             Console.WriteLine();
 
             opcaoUsuario = Console.ReadLine();
